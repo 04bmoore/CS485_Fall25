@@ -42,6 +42,8 @@ public class Main {
     static String Username = ReadLine("C:\\Users\\brend\\OneDrive - Loyola University Maryland\\Junior\\Fall 25\\Database\\CS485_Fall25\\user.txt"); //read this from a local file
     static String Password = ReadLine("C:\\Users\\brend\\OneDrive - Loyola University Maryland\\Junior\\Fall 25\\Database\\CS485_Fall25\\pass.txt"); //Also read this from a file
 
+    //static String Username = "bsmoore";
+    //static String Password = "1223711RMCF$";
     static String url = ConUrl+":"+Port+"/"+Database+ "?user="+Username+"&password="+Password;
 
     public static void main(String[] args) {
