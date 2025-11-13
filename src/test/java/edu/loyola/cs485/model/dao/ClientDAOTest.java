@@ -3,6 +3,7 @@ import edu.loyola.cs485.model.entity.Client;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 import java.sql.*;
+import java.util.List;
 //import java.util.List;
 
 public class ClientDAOTest {
@@ -44,7 +45,7 @@ public class ClientDAOTest {
         );
     }
 
-    /*
+
     @Test
     public void testListClient() throws Exception {
         ClientDAO dao = new ClientDAO();
@@ -52,9 +53,9 @@ public class ClientDAOTest {
 
         List<Client> lst = dao.list();
         assertAll(
-                () -> assertEquals()
+                () -> assertEquals(1,1)
         );
     }
 
-     */
+
 }

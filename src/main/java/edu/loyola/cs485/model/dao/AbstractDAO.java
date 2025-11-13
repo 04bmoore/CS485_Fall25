@@ -40,9 +40,6 @@ public abstract class AbstractDAO<E extends AbstractEntity> {
     static String Username = ReadLine("C:\\Users\\brend\\OneDrive - Loyola University Maryland\\Junior\\Fall 25\\Database\\CS485_Fall25\\user.txt"); //read this from a local file
     static String Password = ReadLine("C:\\Users\\brend\\OneDrive - Loyola University Maryland\\Junior\\Fall 25\\Database\\CS485_Fall25\\pass.txt"); //Also read this from a file
 
-    //private String Username = "bsmoore"; //read this from a local file
-    //private String Password = "1223711RMCF$"; //Also read this from a file
-
     public Connection getConnection() throws SQLException {
         return DriverManager.getConnection(ConUrl+":"+Port+"/"+Database+ "?user="+Username+"&password="+Password);
     }

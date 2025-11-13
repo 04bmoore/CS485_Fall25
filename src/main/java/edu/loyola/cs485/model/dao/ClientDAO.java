@@ -76,7 +76,7 @@ public class ClientDAO extends AbstractDAO<Client> {
         con.close();
     }
 
-/*
+
     public List<Client> list() throws SQLException {
         ArrayList<Client> lstClient = new ArrayList<>();
 
@@ -95,5 +95,4 @@ public class ClientDAO extends AbstractDAO<Client> {
         return lstClient;
     }
 
- */
 }
