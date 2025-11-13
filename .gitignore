@@ -64,5 +64,5 @@ build/
 .DS_Store
 
 ### Password File ###
-./pass.txt
-./user.txt
+pass.txt
+user.txt
