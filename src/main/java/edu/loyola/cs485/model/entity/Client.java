@@ -38,4 +38,9 @@ public class Client extends AbstractEntity {
     public void setDob(Date dob) {
         Dob = dob;
     }
+
+    @Override
+    public String toString(){
+        return getID().toString()+": "+getName()+" <"+getEmail()+">";
+    }
 }

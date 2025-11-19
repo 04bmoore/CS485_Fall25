@@ -2,12 +2,14 @@ package edu.loyola.cs485;
 
 import edu.loyola.cs485.model.dao.ClientDAO;
 import edu.loyola.cs485.model.entity.Client;
+import edu.loyola.cs485.view.MainFrame;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.*;
 
+import java.sql.*;
+import java.util.List;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -45,23 +47,9 @@ public class Main {
     static String url = ConUrl+":"+Port+"/"+Database+ "?user="+Username+"&password="+Password;
 
     public static void main(String[] args) {
+        MainFrame frame = new MainFrame(); // Instantiates the Window
+        frame.setVisible(true); // Activates it (and turn it visible)
 
-        System.out.println("Hello World!");
-        try{
-            ClientDAO dao = new ClientDAO();
-            //dao.delete(100);
-            //Client c = dao.read(102);
-            //System.out.println(c.getName() );
-
-            Client newClient = new Client();
-            newClient.setName("Example 2");
-            newClient.setEmail("ex2@world.com");
-            dao.create(newClient);
-
-            System.out.println("Client has been created "+newClient.getID() );
-        }catch(SQLException ex){
-            System.err.println(ex.getMessage());
-        }
     }
 
     public static void secureInsertClient() throws SQLException{
